@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    background-color: rgb(107, 141, 197);
+    color: black;  
+}
+
+
+.container section {
+    background: #ccc;
+    padding: 10px;
+}
+
+/* /////////////////////////// Create grid ///////////////////////////// */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 15px;
+    margin: 15px;
+    grid-template-areas: 
+      "sidebar location location"
+      "sidebar location location"
+      "sidebar forecastBox forecastBox"
+      "sidebar forecastBox forecastBox";
+  }
+
+
+
+.searchHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px ;
+}
+
+.theSerBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px ;
+}
+
+.cityBtnBulls li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px ;
+}
+
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+
+.location {
+    grid-area: location;
+    font-size: 32px;
+    font-weight: 400px;
+    margin-bottom: 5px;
+}
+
+
+.forecastBox {
+    grid-area: forecastBox;
+}
+
+
+/* /////////////////////////// BUTTONS ///////////////////////////// */
+
+input {
+    width: 200px;
+    height: 15px;
+    padding: 10px 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.search-box  {
+    width: 400px;
+    border-color: gray;
+    
+}
+
+
+
+.view {
+    display: flex;
+    flex-direction: column;
+    min-height: 25vh;
+
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.btn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #2d82c7;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+/* /////////////////////////// BULLETS ///////////////////////////// */
+
+.noBullets {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+  }
+
+
+.cityBtnBulls {
+    list-style-type: none;
+}
+
+.forcBtnBulls {
+    list-style-type: none;
+    
+}
+
+
+
+.location {
+    border: 1px solid black;
+    box-shadow: inset 0px 0px 0px 10px rgb(204, 198, 198);
+    box-sizing: border-box;
+}
+
+
+/* /////////////////////////// CARDS ///////////////////////////// */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap:.5rem;
+  }
+
+  .cards {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    
+  }
+
+  .cardArticles {
+    display: flex;
+    flex-flow:column;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: rgb(60, 90, 109);
+    color: white;
+    
+}
+
+.cardArticles h1 {
+    margin: 1rem 1rem 0;
+}
+
+.cardArticles ul {
+    margin: 0 0 1rem;
+    list-style-type: none;
+}
+
+.funBtn {
+    background-color: rgb(183, 193, 219);
+    color: black;
+    width: 100%;
+    padding: 8px;
+    margin: 10px;
+    font-size: 16px;
+    
+}
+
+
+

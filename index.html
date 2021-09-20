@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dash</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <section class="hdrSect">
+                <h1 class="header">Weather Dashboard</h1>
+            </section>
+        </header>
+
+
+
+        <!----------------------------- Container ----------------------------------->
+        <section class="container">
+
+            <section class="sidebar">
+
+                <!-- Sidebar search form -->
+                <section>
+                    <h2 class="searchHead">Search for a City</h2>
+                    <section class="form">
+                        <form id="searchForm" class="formBody">
+                            <label class="formLabel" for="city"></label>
+                            <input type="text" autocomplete="off" class="search-box" placeholder="Search city"/>
+                            <section class="theSerBtn">
+                            <button type="submit" class="btn submitMe">Search</button>
+                            </section>
+                        </form>
+                    </section> <!-- End of card section -->
+                </section> <!-- End of search form section -->
+
+
+                <section class="buttonList">
+                    <ul class="cityBtnBulls">
+                        <li><button class="funBtn">Los Angeles</button></li>
+                        <li><button class="funBtn">Oakland</button></li>
+                        <li><button class="funBtn">New Yourk</button></li>
+                        <li><button class="funBtn">Seattle</button></li>
+                        <li><button class="funBtn">Atlanta</button></li>
+                        <li><button class="funBtn">Chicago</button></li>
+                    </ul>
+
+                </section> <!-- End of City Button section -->
+
+            </section> <!-- End of Sidebar section -->
+
+
+
+
+
+            <!----------------------------- Forcast Area ----------------------------------->
+
+
+            <!-- Secified city -->
+            <section class="location view">
+                <div class="city">Los Angeles, CA</div>     
+                <div class="date">Sunday 19 Sep 2021</div>
+                
+                <section class="current">
+                    <div class="temp">Temp:15<span>℃</span></div>
+                    <div class="weather">Sunny</div>
+                    <div class="highLow">13℃ / 16℃</div>
+                </section>
+            </section> <!-- End of Specified City section -->
+
+
+            <!------------------------------ FORECAST -------------------------------------->
+            <!-- Random City Forcasts Cards -->
+            <section class="forecastBox">
+                <h2>5 Day Forecast:</h2>
+
+                <!-- Multiple city forcasts cards -->
+                <section class="cards">
+
+                    <!-- Forecasts Card Articles -->
+                    <article class="cardArticles">
+                        <h1>Today</h1>
+                        <ul class="noBullets">
+                            <li>Temp:</li>
+                            <li>Wind:</li>
+                            <li>Humidity</li>
+                        </ul>
+                    </article>
+
+                    <article class="cardArticles">
+                        <h1>Tomorrow</h1>
+                        <ul class="noBullets">
+                            <li>Temp:</li>
+                            <li>Wind:</li>
+                            <li>Humidity</li>
+                        </ul>
+                    </article>
+
+                    <article class="cardArticles">
+                        <h1>Next Day</h1>
+                        <ul class="noBullets">
+                            <li>Temp:</li>
+                            <li>Wind:</li>
+                            <li>Humidity</li>
+                        </ul>
+                    </article>
+
+                    <article class="cardArticles">
+                        <h1>And Wrap</h1>
+                        <ul class="noBullets">
+                            <li>Temp:</li>
+                            <li>Wind:</li>
+                            <li>Humidity</li>
+                        </ul>
+                    </article>
+                    <!-- End of Forecasts card articles -->
+
+                </section> <!-- End of cards -->
+
+            </section> <!-- End of Forecast section -->
+
+        </section> <!-- End of container section -->
+
+
+
+
+
+
+
+        <script src="./assets/wetDash.js"></script>
+    </main>
+</body>
+
+</html>
